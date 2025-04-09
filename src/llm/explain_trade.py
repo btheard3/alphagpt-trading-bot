@@ -1,14 +1,13 @@
-# src/llm/explain_trade.py
-import openai
 import os
 from dotenv import load_dotenv
+import openai
+
 load_dotenv()
 
-
-# Set your API key (or load from .env)
+# Set your API key from .env
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-def explain_calendar_trade(trade: dict):
+def explain_calendar_trade(trade: dict) -> str:
     prompt = f"""
 You are an expert options strategist. Please explain the following calendar spread trade idea to a beginner:
 
@@ -22,13 +21,20 @@ Net Debit: {trade['net_debit']}
 Explain the profit potential, risks, and market conditions this trade works best in.
     """
 
-    response = openai.ChatCompletion.create(
+    response = openai.chat.completions.create(
         model="gpt-4",
         messages=[
-            {"role": "system", "content": "You are a trading mentor who explains complex ideas in simple terms."},
-            {"role": "user", "content": prompt}
+            {
+                "role": "system",
+                "content": "You are a trading mentor who explains complex ideas in simple terms."
+            },
+            {
+                "role": "user",
+                "content": prompt
+            }
         ],
-        temperature=0.7
+        temperature=0.7,
     )
 
     return response.choices[0].message.content.strip()
+
