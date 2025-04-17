@@ -1,22 +1,22 @@
 {
   "strategies": [
     {
-      "strategy_name": "**Iron Condor**",
-      "description": "An Iron Condor strategy involves selling a call spread and a put spread on the same underlying asset with the same expiration date. This strategy could help the trader to collect premium income and limit risk, and it's beneficial when one expects the underlying asset to remain within a certain price range until the options expire.",
-      "why_it_fits": "The trader has shown an ability to manage complex strategies and understands the importance of time decay, which is a critical factor in an Iron Condor strategy. Additionally, the trader has shown a readiness to improvise and adapt, which is crucial for adjusting the Iron Condor strategy according to market movements.",
-      "best_conditions": "This strategy is most effective in a market with low volatility where the underlying asset is expected to trade within a specific range."
+      "strategy_name": "Iron Condor",
+      "description": "An iron condor involves selling a call spread and a put spread on the same underlying asset with the same expiration date. This creates a range where the trade can profit.",
+      "why_it_fits": "This strategy suits traders who have a knack for managing multiple positions, can stay calm under pressure and are comfortable with limited price movements \u2013 all characteristics shown by the trader.",
+      "best_conditions": "Ideal for a market that's expected to move sideways or within a relatively tight range."
     },
     {
-      "strategy_name": "**Covered Call Writing**",
-      "description": "This strategy involves owning or buying shares of the underlying asset and selling call options against those shares. This strategy allows the trader to earn income through the premiums received from selling the calls.",
-      "why_it_fits": "The trader's mindset indicates a fearfulness and learning approach, suggesting a conservative strategy like covered call writing might be suitable. This strategy allows for income generation while offering some downside protection.",
-      "best_conditions": "Covered call writing works well in a sideways, slightly bullish, or even slightly bearish market. As long as the underlying asset's price doesn't rise sharply, the trader can profit from the premiums received."
+      "strategy_name": "Diagonal Call Spread",
+      "description": "A diagonal call spread involves buying a longer-term call option and selling a shorter-term call option with a higher strike price. This strategy profits from both time decay and a moderate upward move in the underlying asset.",
+      "why_it_fits": "The trader has shown success with calendar spreads, which are similar in structure but benefit from different price movements. This could provide a new way to apply their existing skills.",
+      "best_conditions": "Suited for a moderately bullish market where the underlying asset is expected to increase in price, but not drastically."
     },
     {
-      "strategy_name": "**Long Straddle**",
-      "description": "A long straddle involves buying a call and a put option on the same underlying asset with the same strike price and expiration date. This strategy profits from a significant move in either direction and can protect against unforeseen market events or increased volatility.",
-      "why_it_fits": "The trader's improvisational rule and learning mindset indicate a willingness to adapt and learn from market changes. A long straddle would allow the trader to potentially profit from large price swings in either direction.",
-      "best_conditions": "This strategy is best used when the trader expects a significant price move in either direction or around events that could cause increased volatility such as earnings announcements or economic data releases."
+      "strategy_name": "Butterfly Spread",
+      "description": "A butterfly spread involves selling two options at the same strike price while buying one option at a lower strike price and another at a higher strike price. All options have the same expiration date. This strategy profits if the underlying asset stays close to the middle strike price.",
+      "why_it_fits": "The trader has shown a propensity to improvise and a willingness to learn, which will be useful in managing this slightly more complex strategy. They have also shown a preference for strategies that benefit from limited price movement.",
+      "best_conditions": "A butterfly spread works best in a market that's expected to move sideways or within a tight range."
     }
   ]
 }
