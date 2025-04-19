@@ -1,22 +1,22 @@
 {
   "strategies": [
     {
-      "strategy_name": "Iron Condor",
-      "description": "An iron condor involves selling a call spread and a put spread on the same underlying asset with the same expiration date. This creates a range where the trade can profit.",
-      "why_it_fits": "This strategy suits traders who have a knack for managing multiple positions, can stay calm under pressure and are comfortable with limited price movements \u2013 all characteristics shown by the trader.",
-      "best_conditions": "Ideal for a market that's expected to move sideways or within a relatively tight range."
-    },
-    {
       "strategy_name": "Diagonal Call Spread",
-      "description": "A diagonal call spread involves buying a longer-term call option and selling a shorter-term call option with a higher strike price. This strategy profits from both time decay and a moderate upward move in the underlying asset.",
-      "why_it_fits": "The trader has shown success with calendar spreads, which are similar in structure but benefit from different price movements. This could provide a new way to apply their existing skills.",
-      "best_conditions": "Suited for a moderately bullish market where the underlying asset is expected to increase in price, but not drastically."
+      "description": "This involves buying a long-term call option and selling a short-term call option with a higher strike price on the same underlying asset.",
+      "why_it_fits": "The trader has demonstrated an understanding of time decay and the use of options with different expiration dates. This strategy allows for profit from both time decay and price movement, providing a balance between the trader's demonstrated skills and willingness to improvise.",
+      "best_conditions": "This strategy works best when the market is moderately bullish, which allows for the long-term call to increase in value while the short-term call expires worthless."
     },
     {
-      "strategy_name": "Butterfly Spread",
-      "description": "A butterfly spread involves selling two options at the same strike price while buying one option at a lower strike price and another at a higher strike price. All options have the same expiration date. This strategy profits if the underlying asset stays close to the middle strike price.",
-      "why_it_fits": "The trader has shown a propensity to improvise and a willingness to learn, which will be useful in managing this slightly more complex strategy. They have also shown a preference for strategies that benefit from limited price movement.",
-      "best_conditions": "A butterfly spread works best in a market that's expected to move sideways or within a tight range."
+      "strategy_name": "Iron Condor",
+      "description": "An iron condor involves selling a call spread and a put spread on the same underlying asset with the same expiration date. This is a neutral strategy that profits from a lack of price movement and time decay.",
+      "why_it_fits": "The trader has shown a preference for strategies that profit from time decay, and an iron condor allows for this while also providing a broader range for the underlying asset price to move without impacting profitability.",
+      "best_conditions": "This strategy works best in a stable market with low volatility, which aligns with the trader's demonstrated preference for strategies that profit from time decay."
+    },
+    {
+      "strategy_name": "Long Straddle",
+      "description": "This involves buying a call and a put option with the same strike price and expiration date on the same underlying asset.",
+      "why_it_fits": "This strategy can be seen as a way to 'improvise' in the face of market uncertainty, as it profits from significant price movements in either direction. This could be a good fit for the trader's willingness to improvise and adapt to changing market conditions.",
+      "best_conditions": "A long straddle works best in volatile markets where large price movements are expected, which could provide an opportunity for the trader to learn and adapt."
     }
   ]
 }

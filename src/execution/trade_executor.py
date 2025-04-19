@@ -9,14 +9,13 @@ def simulate_trade(strategy: dict, ticker: str, entry_price: float, dte: int, ta
     trade = {
         "timestamp": datetime.now().isoformat(),
         "ticker": ticker.upper(),
-        "strategy_name": strategy["strategy_name"],
-        "description": strategy["description"],
+        "strategy_name": strategy.get("strategy_name", "Unknown Strategy"),
+        "description": strategy.get("description", strategy.get("reason", "No description provided")),
         "entry_price": entry_price,
-        "target_price": round(entry_price * (1 + target_pct), 2),
-        "stop_price": round(entry_price * (1 - stop_pct), 2),
         "dte": dte,
-        "status": "PENDING",
-        "notes": "Simulated trade generated from ranked strategy.",
+        "target_pct": target_pct,
+        "stop_pct": stop_pct,
+        "status": "OPEN"
     }
 
     # Save to trade_log.json
@@ -25,13 +24,18 @@ def simulate_trade(strategy: dict, ticker: str, entry_price: float, dte: int, ta
 
     if log_path.exists():
         with open(log_path, "r") as f:
-            log = json.load(f)
+            try:
+                existing = json.load(f)
+            except json.JSONDecodeError:
+                existing = []
     else:
-        log = []
+        existing = []
 
-    log.append(trade)
+    existing.append(trade)
 
     with open(log_path, "w") as f:
-        json.dump(log, f, indent=2)
+        json.dump(existing, f, indent=2)
 
+    print("📥 Trade logged!")
     return trade
+

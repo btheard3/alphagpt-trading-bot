@@ -1,19 +1,19 @@
 {
-  "ranked_strategies": [
+  "strategies": [
     {
-      "strategy_name": "\ud83d\udcca **Diagonal Call Spread",
+      "strategy_name": "Diagonal Call Spread",
       "rank": 1,
-      "reason": "- Ranking Reason: This strategy has the most potential for profit as it benefits from both time decay and upward movement in the underlying asset's price. The trader's past performance with calendar spreads suggests they have the necessary skills to effectively manage this strategy. The risk can be managed by adjusting the strike prices and expiration dates of the options."
+      "reason": "This strategy has high profit potential, aligns well with the trader's understanding of time decay and use of options with different expiration dates, and is adaptable to a moderately bullish market."
     },
     {
-      "strategy_name": "\ud83d\udcca **Iron Condor",
+      "strategy_name": "Iron Condor",
       "rank": 2,
-      "reason": "- Ranking Reason: Iron Condor comes second as it offers moderate profit potential within a defined range. It fits well with the trader's ability to manage multiple positions and handle pressure. The risk management flexibility is relatively high because the trader can adjust the strike prices and widths of the spreads to control the level of risk."
+      "reason": "Although this strategy has a broader range for the underlying asset price to move without impacting profitability, it is more reliant on a stable market with low volatility. It aligns with the trader's preference for strategies that profit from time decay."
     },
     {
-      "strategy_name": "\ud83d\udcca **Butterfly Spread",
+      "strategy_name": "Long Straddle",
       "rank": 3,
-      "reason": "- Ranking Reason: This strategy has the least profit potential as it only profits if the underlying asset's price stays close to the middle strike price. While the trader's willingness to learn and improvise is beneficial, the strategy is more complex and requires precise market predictions. Risk management flexibility is somewhat limited as the profit zone is narrowly defined by the middle strike price."
+      "reason": "This strategy has potential for high profits in volatile markets with large price movements. However, it is less adaptable to other market conditions and may not align as well with the trader's demonstrated skills and preferences."
     }
   ]
 }
