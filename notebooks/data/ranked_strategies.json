@@ -1,19 +1,19 @@
 {
   "strategies": [
     {
-      "strategy_name": "Diagonal Call Spread",
+      "strategy_name": "Covered Call",
       "rank": 1,
-      "reason": "This strategy has high profit potential, aligns well with the trader's understanding of time decay and use of options with different expiration dates, and is adaptable to a moderately bullish market."
+      "reason": "The Covered Call strategy ranks first due to its ability to generate income and limit downside risk, which aligns with the trader's strengths. It also adapts well to a neutral or slightly bullish market, providing flexibility in various market conditions."
+    },
+    {
+      "strategy_name": "Butterfly Spread",
+      "rank": 2,
+      "reason": "The Butterfly Spread is ranked second due to its defined risk-reward set-up and its ability to profit from time decay and limited price movement. However, it requires the market to be stable or slightly bullish, which may limit its adaptability in more volatile markets."
     },
     {
       "strategy_name": "Iron Condor",
-      "rank": 2,
-      "reason": "Although this strategy has a broader range for the underlying asset price to move without impacting profitability, it is more reliant on a stable market with low volatility. It aligns with the trader's preference for strategies that profit from time decay."
-    },
-    {
-      "strategy_name": "Long Straddle",
       "rank": 3,
-      "reason": "This strategy has potential for high profits in volatile markets with large price movements. However, it is less adaptable to other market conditions and may not align as well with the trader's demonstrated skills and preferences."
+      "reason": "The Iron Condor strategy is ranked third as it requires the underlying asset to trade within a defined range until the options expire. While it aligns with the trader's preference for strategies that profit from time decay and limited price movement, its success is dependent on low volatility, stable markets, making it potentially less adaptable to changing market conditions."
     }
   ]
 }

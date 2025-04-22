@@ -1,22 +1,22 @@
 {
   "strategies": [
     {
-      "strategy_name": "Diagonal Call Spread",
-      "description": "This involves buying a long-term call option and selling a short-term call option with a higher strike price on the same underlying asset.",
-      "why_it_fits": "The trader has demonstrated an understanding of time decay and the use of options with different expiration dates. This strategy allows for profit from both time decay and price movement, providing a balance between the trader's demonstrated skills and willingness to improvise.",
-      "best_conditions": "This strategy works best when the market is moderately bullish, which allows for the long-term call to increase in value while the short-term call expires worthless."
-    },
-    {
       "strategy_name": "Iron Condor",
-      "description": "An iron condor involves selling a call spread and a put spread on the same underlying asset with the same expiration date. This is a neutral strategy that profits from a lack of price movement and time decay.",
-      "why_it_fits": "The trader has shown a preference for strategies that profit from time decay, and an iron condor allows for this while also providing a broader range for the underlying asset price to move without impacting profitability.",
-      "best_conditions": "This strategy works best in a stable market with low volatility, which aligns with the trader's demonstrated preference for strategies that profit from time decay."
+      "description": "An iron condor involves selling a call spread and a put spread with the same expiration date but different strike prices. It's a neutral strategy that profits when the underlying asset trades within a specific range.",
+      "why_it_fits": "The trader shows a preference for strategies that profit from time decay and limited price movement, which is exactly what an iron condor strategy offers. Plus, the improvisational rule application suggests a comfort level with managing multiple legs of a trade.",
+      "best_conditions": "Stable markets with low volatility are ideal for this strategy. It works best when the trader expects the underlying asset to trade within a defined range until the options expire."
     },
     {
-      "strategy_name": "Long Straddle",
-      "description": "This involves buying a call and a put option with the same strike price and expiration date on the same underlying asset.",
-      "why_it_fits": "This strategy can be seen as a way to 'improvise' in the face of market uncertainty, as it profits from significant price movements in either direction. This could be a good fit for the trader's willingness to improvise and adapt to changing market conditions.",
-      "best_conditions": "A long straddle works best in volatile markets where large price movements are expected, which could provide an opportunity for the trader to learn and adapt."
+      "strategy_name": "Butterfly Spread",
+      "description": "A butterfly spread is a neutral strategy that involves selling 2 options at the middle strike price and buying 1 option each at a lower and higher strike price. All options have the same expiration date.",
+      "why_it_fits": "This strategy aligns with the trader's successful use of defined risk-reward setups. It also profits from time decay and limited price movement, which the trader has leveraged effectively in the past.",
+      "best_conditions": "Stable or slightly bullish markets are ideal for a butterfly spread. It's most effective when the trader expects the underlying asset's price to remain near the middle strike price until expiration."
+    },
+    {
+      "strategy_name": "Covered Call",
+      "description": "A covered call strategy involves owning the underlying asset and selling a call option against it. This strategy generates income from the option premium and benefits from a slight increase in the underlying asset's price.",
+      "why_it_fits": "The trader has shown a tendency to use strategies that generate income and have defined risk. The covered call strategy aligns with these strengths by offering premium income and limiting downside risk to the extent of the underlying asset's cost.",
+      "best_conditions": "This strategy works best in a neutral to slightly bullish market where the trader expects the underlying asset's price to increase moderately or remain stable."
     }
   ]
 }
